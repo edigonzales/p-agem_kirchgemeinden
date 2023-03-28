@@ -15,24 +15,45 @@ AT "https://agem.so.ch"
 VERSION "2023-03-28"  =
   IMPORTS GeometryCHLV95_V1;
 
-  TOPIC Kirchgemeinden =
+  /** Gemeinde oder Ortsteil (in der Regel ehemalige Gemeinde vor Fusion)
+   */
+  CLASS Gemeinde_Ortsteil (ABSTRACT) =
+    /** Name der Gemeinde resp. des Ortsteils
+     */
+    Name : MANDATORY TEXT*200;
+    /** Perimeter der Gemeinde resp. des Ortsteils
+     */
+    Perimeter : MANDATORY GeometryCHLV95_V1.MultiSurface;
+  END Gemeinde_Ortsteil;
+
+  /** Kirchgemeinde
+   */
+  CLASS Kirchgemeinde (ABSTRACT) =
+    /** Name der Kirchgemeinde
+     */
+    Name : MANDATORY TEXT*500;
+  END Kirchgemeinde;
+
+  TOPIC Roem_kath_KG =
     OID AS INTERLIS.UUIDOID;
 
-    CLASS Kirchgemeinde (ABSTRACT) =
-      /** Name der Kirchgemeinde
-       */
-      Name : MANDATORY TEXT*500;
-      /** Perimeter der Kirchgemeinde
-       */
-      Perimeter : MANDATORY GeometryCHLV95_V1.MultiSurface;
-    END Kirchgemeinde;
+    /** Gemeinde oder Ortsteil (in der Regel ehemalige Gemeinde vor Fusion)
+     */
+    CLASS Gemeinde_Ortsteil
+    EXTENDS SO_AGEM_Kirchgemeinden_20230328.Gemeinde_Ortsteil =
+    END Gemeinde_Ortsteil;
 
     /** Römisch-katholische Kirchgemeinde
      */
-    CLASS Roem_kath_Kirchgemeinde
-    EXTENDS Kirchgemeinde =
-    END Roem_kath_Kirchgemeinde;
+    CLASS Kirchgemeinde
+    EXTENDS SO_AGEM_Kirchgemeinden_20230328.Kirchgemeinde =
+    END Kirchgemeinde;
 
-  END Kirchgemeinden;
+    ASSOCIATION Kirchgemeinde_GemeindeOrtsteil =
+      r_GemeindeOrtsteil -- {1..*} Gemeinde_Ortsteil;
+      r_Kirchgemeinde -- {1..*} Kirchgemeinde;
+    END Kirchgemeinde_GemeindeOrtsteil;
+
+  END Roem_kath_KG;
 
 END SO_AGEM_Kirchgemeinden_20230328.
