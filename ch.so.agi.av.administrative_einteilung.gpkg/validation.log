@@ -1,0 +1,49 @@
+Info: ilivalidator-1.12.1-8d9b922cd26b01147d77a23d300d952d29359a30
+Info: ili2c-5.2.8-61f7212579ac3c4ae219d511afb5a0615855bc73
+Info: iox-ili-1.21.13-0ca3feb59eff9c381b29139d8f808b4de2464d49
+Info: User <1000940000>
+Info: Start date 2023-01-18 12:47
+Info: maxMemory 1013632 KB
+Info: dataFile </tmp/workspace/agi_av_gb_administrative_einteilungen_pub/agi_av_gb_administrative_einteilungen_pub/build/SO_AGI_AV_GB_Administrative_Einteilungen_Publikation_20180822.xtf>
+Info: modeldir <%ITF_DIR;https://geo.so.ch/models/;%JAR_DIR/ilimodels>
+Info: lookup model <SO_AGI_AV_GB_Administrative_Einteilungen_Publikation_20180822> 2.3 in repository </tmp/workspace/agi_av_gb_administrative_einteilungen_pub/agi_av_gb_administrative_einteilungen_pub/build/>
+Info: lookup model <SO_AGI_AV_GB_Administrative_Einteilungen_Publikation_20180822> 2.3 in repository <https://geo.so.ch/models/>
+Info: lookup model <GeometryCHLV95_V1> 2.3 in repository </tmp/workspace/agi_av_gb_administrative_einteilungen_pub/agi_av_gb_administrative_einteilungen_pub/build/>
+Info: lookup model <GeometryCHLV95_V1> 2.3 in repository <https://geo.so.ch/models/>
+Info: lookup model <GeometryCHLV95_V1> 2.3 in repository <http://models.geo.kgk-cgc.ch/>
+Info: lookup model <GeometryCHLV95_V1> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <CHAdminCodes_V1> 2.3 in repository </tmp/workspace/agi_av_gb_administrative_einteilungen_pub/agi_av_gb_administrative_einteilungen_pub/build/>
+Info: lookup model <CHAdminCodes_V1> 2.3 in repository <https://geo.so.ch/models/>
+Info: lookup model <CHAdminCodes_V1> 2.3 in repository <http://models.geo.kgk-cgc.ch/>
+Info: lookup model <CHAdminCodes_V1> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <InternationalCodes_V1> 2.3 in repository </tmp/workspace/agi_av_gb_administrative_einteilungen_pub/agi_av_gb_administrative_einteilungen_pub/build/>
+Info: lookup model <InternationalCodes_V1> 2.3 in repository <https://geo.so.ch/models/>
+Info: lookup model <InternationalCodes_V1> 2.3 in repository <http://models.geo.kgk-cgc.ch/>
+Info: lookup model <InternationalCodes_V1> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <CoordSys> 2.3 in repository </tmp/workspace/agi_av_gb_administrative_einteilungen_pub/agi_av_gb_administrative_einteilungen_pub/build/>
+Info: lookup model <CoordSys> 2.3 in repository <https://geo.so.ch/models/>
+Info: lookup model <CoordSys> 2.3 in repository <http://models.geo.kgk-cgc.ch/>
+Info: lookup model <CoordSys> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <CoordSys> 2.3 in repository <https://models.interlis.ch/>
+Info: lookup model <Units> 2.3 in repository </tmp/workspace/agi_av_gb_administrative_einteilungen_pub/agi_av_gb_administrative_einteilungen_pub/build/>
+Info: lookup model <Units> 2.3 in repository <https://geo.so.ch/models/>
+Info: lookup model <Units> 2.3 in repository <http://models.geo.kgk-cgc.ch/>
+Info: lookup model <Units> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <Units> 2.3 in repository <https://models.interlis.ch/>
+Info: ilifile </home/gradle/.ilicache/models.interlis.ch/refhb23/CoordSys-20151124.ili>
+Info: ilifile </home/gradle/.ilicache/models.geo.admin.ch/CH/CHBase_Part2_LOCALISATION_V1.ili>
+Info: ilifile </home/gradle/.ilicache/models.interlis.ch/refhb23/Units-20120220.ili>
+Info: ilifile </home/gradle/.ilicache/models.geo.admin.ch/CH/CHBase_Part4_ADMINISTRATIVEUNITS_V1.ili>
+Info: ilifile </home/gradle/.ilicache/models.geo.admin.ch/CH/CHBase_Part1_GEOMETRY_V1.ili>
+Info: ilifile </home/gradle/.ilicache/geo.so.ch/models/AGI/SO_AGI_AV_GB_Administrative_Einteilungen_Publikation_20180822.ili>
+Info: validate data...
+Info: assume unknown external objects
+Info: first validation pass...
+Info: second validation pass...
+Info: object count 234 (structured elements 471)
+Info: /tmp/workspace/agi_av_gb_administrative_einteilungen_pub/agi_av_gb_administrative_einteilungen_pub/build/SO_AGI_AV_GB_Administrative_Einteilungen_Publikation_20180822.xtf: SO_AGI_AV_GB_Administrative_Einteilungen_Publikation_20180822.Grundbuchkreise BID=SO_AGI_AV_GB_Administrative_Einteilungen_Publikation_20180822.Grundbuchkreise
+Info:     127 objects in CLASS SO_AGI_AV_GB_Administrative_Einteilungen_Publikation_20180822.Grundbuchkreise.Grundbuchkreis
+Info: /tmp/workspace/agi_av_gb_administrative_einteilungen_pub/agi_av_gb_administrative_einteilungen_pub/build/SO_AGI_AV_GB_Administrative_Einteilungen_Publikation_20180822.xtf: SO_AGI_AV_GB_Administrative_Einteilungen_Publikation_20180822.Nachfuehrungskreise BID=SO_AGI_AV_GB_Administrative_Einteilungen_Publikation_20180822.Nachfuehrungskreise
+Info:     107 objects in CLASS SO_AGI_AV_GB_Administrative_Einteilungen_Publikation_20180822.Nachfuehrungskreise.Gemeinde
+Info: ...validation done
+Info: End date 2023-01-18 12:47 validation took 00h:00m:08s.0616ms

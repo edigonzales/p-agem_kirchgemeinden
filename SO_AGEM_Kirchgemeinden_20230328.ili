@@ -1,0 +1,38 @@
+INTERLIS 2.3;
+
+/** !!------------------------------------------------------------------------------
+ *  !! Version    | wer | Änderung
+ *  !!------------------------------------------------------------------------------
+ *  !! 2023-03-28 | sz  | Initialerstellung
+ *  !!==============================================================================
+ */
+!!@ technicalContact=mailto:agi@bd.so.ch
+!!@ furtherInformation=http://geo.so.ch/models/AGEM/SO_AGEM_Kirchgemeinden_20230328.uml
+!!@ shortDescription="Kirchgemeinden des Kantons Solothurn"
+!!@ title=Kirchgemeinden
+MODEL SO_AGEM_Kirchgemeinden_20230328 (de)
+AT "https://agem.so.ch"
+VERSION "2023-03-28"  =
+  IMPORTS GeometryCHLV95_V1;
+
+  TOPIC Kirchgemeinden =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS Kirchgemeinde (ABSTRACT) =
+      /** Name der Kirchgemeinde
+       */
+      Name : MANDATORY TEXT*500;
+      /** Perimeter der Kirchgemeinde
+       */
+      Perimeter : MANDATORY GeometryCHLV95_V1.MultiSurface;
+    END Kirchgemeinde;
+
+    /** Römisch-katholische Kirchgemeinde
+     */
+    CLASS Roem_kath_Kirchgemeinde
+    EXTENDS Kirchgemeinde =
+    END Roem_kath_Kirchgemeinde;
+
+  END Kirchgemeinden;
+
+END SO_AGEM_Kirchgemeinden_20230328.
